@@ -93,29 +93,6 @@ namespace SauceDemo
     public class SauceDemo_LoginTests
     {
         [Test]
-        public static void TestPass()
-        {
-            Assert.AreEqual("123", "123");
-        }
-
-        [Test]
-        public static void TestFail()
-        {
-            Assert.AreEqual("123", "abc");
-        }
-
-        [OneTimeTearDown]
-        public static void GenReport()
-        {
-            
-        }
-
-
-
-
-
-
-        [Test]
         public static void SauceDemo_Login_NoUsernameOrPassword()
         {
             var loginscreen = new LoginScreen()
